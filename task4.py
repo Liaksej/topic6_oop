@@ -76,6 +76,7 @@ class Lecturer(Mentor):
             return
         return self._average_grade() < other._average_grade()
 
+
 class Reviewer(Mentor):
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
@@ -89,6 +90,7 @@ class Reviewer(Mentor):
     def __str__(self):
         res = f'Имя: {self.name}\nФамилия: {self.surname}'
         return res
+
 
 # Экземпляры студентов
 student1 = Student('Алексей', 'Тарусов', 'мужской')
@@ -139,6 +141,7 @@ student2.rate_hw(lecturer2, 'Python', 6)
 #Списки студентов и лекторов
 students_list = [student1, student2]
 lecturers_list = [lecturer1, lecturer2]
+
 
 def average_mark(persons_list, course):
     '''Функция, рассчитывающая среднюю оценку за курс
