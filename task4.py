@@ -131,12 +131,12 @@ student2.rate_hw(lecturer1, 'Python', 10)
 student2.rate_hw(lecturer1, 'Python', 6)
 
 #Оценки второго лектора
-student1.rate_hw(lecturer2, 'Python', 4)
-student1.rate_hw(lecturer2, 'Python', 5)
-student1.rate_hw(lecturer2, 'Python', 6)
-student2.rate_hw(lecturer2, 'Python', 5)
-student2.rate_hw(lecturer2, 'Python', 5)
+student1.rate_hw(lecturer2, 'Python', 10)
+student1.rate_hw(lecturer2, 'Python', 9)
+student1.rate_hw(lecturer2, 'Python', 8)
+student2.rate_hw(lecturer2, 'Python', 7)
 student2.rate_hw(lecturer2, 'Python', 6)
+student2.rate_hw(lecturer2, 'Python', 5)
 
 #Списки студентов и лекторов
 students_list = [student1, student2]
@@ -186,6 +186,8 @@ print()
 
 print(f'Лектор {lecturer1.name} {lecturer1.surname} круче, чем {lecturer2.name} {lecturer2.surname}?',
       'Ответ:', lecturer1 > lecturer2)
+print(f'Студент {student1.name} {student1.surname} круче, чем {student2.name} {student2.surname}?',
+      'Ответ:', student1 > student2)
 print()
 print()
 
